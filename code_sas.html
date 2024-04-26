@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+	<head>
+		<title>E-Portfolio</title>
+		<meta charset="UTF-8">
+		<link rel= "stylesheet" type ="text/css" href="css/code_sas.css">
+	</head>
+	<body>
+		<header>
+			<a href="accueil.html">
+					<div class="logo">
+						<img src="image/logo.jpg" alt="Logo">
+			</a>
+			</div>
+			<div class="banner">
+				<img src="image/banniere.jpg" alt="Bannière Accueil">
+			</div>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="accueil.html">Accueil</a></li>
+				<li><a href="projet.html">Mes Projets et Compétences</a></li>
+				<!-- <li><a href="experience.html">Expériences Professionnelles</a></li> -->
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<div class="container text-center">
+			<h2>Domaine d'application sur SAS</h2>
+			<h3>(Octobre 2023- Décembre 2023)</h3>
+		</div>
+		<div id="explication">
+			<p>Dans ce projet, j'ai étudié un code sasqui traitait deux fichiers Excel. 
+			Ils étaient sujet du placement de l’argent de chaque client pour leur épargne. 
+			L’argent pouvait soit être placé dans une banque sous un livret avec un taux d’intérêt de minimum 4%. 
+			Donc avec toujours une augmentation net chaque mois. 
+			Soit être placé à la bourse qui pouvait soit être un gain un gros gain pour le client soit une perte pour le client. 
+			Donc ce taux d’intérêt fluctue au cours du temps. 
+			</p>
+			<p>Ces données sont dans le fichier Excel « STE ». 
+			On voulait rajouter des données qui est dans le fichier Excel « Elément à intégrer » dans le fichier STE.
+			Mais pour rajouter ces données, il fallait que le fichier « Elément à intégrer » soit conforme pour être insérer 
+			au fichier de référence qui est le fichier STE. </p>
+			<p>Donc pour faire cette vérification, nous avons fait une MACRO appeler "Mise à jour" pour qu’elle puisse se faire de manière automatique à chaque fois 
+			que l’on voudrait insérer de nouvelle de donnée dans le fichier de référence STE.</p>
+			<p>Dans cette macro, j'ai entrepris une série d'étapes sur SAS pour effectuer un test de vérification à partir de l'importation de deux fichiers. 
+			Le premier fichier, renommé « ref_prod_tech », agit comme fichier de référence. 
+			Ensuite, j'ai filtré les deux tables en utilisant la variable « prod_tech » pour créer deux nouvelles tables, info1 et info2, 
+			contenant les noms, types (numériques ou caractères) et longueurs des variables. Cependant, ces variables ont été définies uniquement comme caractères.
+			Cette procédure visait à comparer le nombre de caractères de chaque variable entre les deux tables.</p>
+			<p>J'ai ensuite créé une nouvelle table, enregistrée sur SAS, 
+			qui représente la longueur maximale des variables caractères communes entre info1 et info2, afin d'éviter toute troncature potentielle. 
+			Par la suite, j'ai fusionné les tables ref_prod_tech et données sous la condition que les codes produits techniques 
+			ne soient présents que dans la table « données » et non dans « ref_prod_tech ». 
+			Cette nouvelle table a été nommée « données2 ».</p>
+			<p>Une autre table, nommée « Verif_code_prod_tech », a été créée à partir de la fusion de « ref_prod_tech » et « données », 
+			avec la condition que les données des deux tables soient présentes dans la nouvelle table.
+			En utilisant une procédure SQL, j'ai défini que si les données de la table « Elément à intégrer » sont également présentes dans la table de référence, 
+			nous arrêtons la vérification. Sinon, je crée une table appelée « Libellés ».</p>
+			<p>Ensuite, en utilisant la macro-variable « %Let », nous avons compté le nombre d'observations dans la table « Libellés ». 
+			Nous avons également créé une nouvelle table, « verif », en supprimant les doublons, 
+			puis compté le nombre de doublons dans cette table avec la macro-variable « %Let ». 
+			Nous avons procédé de manière similaire pour la table « données », retirant les doublons de « données2 » et comptant le nombre d'observations.
+			Si le nombre d'observations est identique entre la table « verif » et la table « libellés », et entre la table « a » et la table « données », 
+			nous exportons la table « libellés » au format texte, avec la tabulation comme séparateur. Sinon, la vérification n'est pas effectuée.</p>
+			<p>Après l'exportation, nous pouvons intégrer ces nouvelles données au fichier de référence STE. 
+			Cette macro simplifie le processus de vérification des nouvelles données à intégrer dans le fichier STE en évitant de répéter ce code à chaque fois, 
+			mais en faisant plutôt un appel à la macro « Mise à jour ».</p>
+		</div>
+		<br><br>
+		<a href="projet.html" target= "_parent"> Retour vers mes Projets et Compétences</a>
+	</body>
+	<footer></footer>
+</html>

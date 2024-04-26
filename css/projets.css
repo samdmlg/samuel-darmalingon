@@ -1,0 +1,335 @@
+.logo img {
+    max-height: 100px;
+    width: 8%;
+    float: left;
+}
+
+.banner img {
+    max-height: 100px;
+	width:92%;
+    float: left;
+}
+
+
+
+body {
+    background: #e1e1e1;
+}
+
+
+/* ------------------------------------------------------- Barre de navigation ------------------------------------------------------------- */
+nav {
+    clear: both; /* Cette propriété assure que la nav est positionnée en dessous des éléments flottants */
+    margin-top: 15px;
+    background-color: #c1dbda;
+    overflow: hidden;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #c1dbda;
+    overflow: hidden;
+	margin-top:15px;
+}
+
+nav li {
+    float: left;
+	width: 33.33%; 
+}
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 24px 26px;
+    text-decoration: none;
+    border: 2px solid #000;
+}
+
+nav li a:hover {
+    background-color: #73cdff;
+}
+
+
+/* --------------------------------------Titre Projets------------------------------------- */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 25vh;
+	margin-top: 50px;
+}
+
+.container h2 {
+    font-size: 57px;
+    text-align: center;
+    color: #ad795b;
+    margin-top: 0;
+    border: none;
+}
+/* --------------------------Introduction des projets------------------------------- */
+#intro {
+    border-radius: 20px; 
+    padding: 20px;
+    background-color: #DDBEA5;
+	font-size: 25px;
+	color: white;
+	text-align: justify;
+	justify-content: center;
+	margin-bottom:30px;
+	padding: 15px 20px;
+}
+/* ---------------------------------------Tableau des SAE------------------------------ */
+.container {
+    margin-top: 100px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+	background-color:#AC663E;
+}
+
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+	color: white;
+}
+tr td a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 24px 26px;
+    text-decoration: none; 
+}
+
+tr td a:hover {
+    background-color: #DDBEA5;
+}
+/* -----------------------------Listes des compétences acquises-------------------------- */
+#competence {
+    background-color: #DDBEA5;
+    border-radius: 20px;
+    width: 40%;
+    padding: 15px 20px;
+    margin-top: 300px; /* Réduire la marge supérieure */
+    float: left;
+}
+
+#competence h3 {
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
+
+#competence li {
+    text-align: center; /* Aligner le texte à gauche */
+    font-size: 20px;
+    color: white;
+    margin-left: 20px; /* Ajouter une marge à gauche */
+}
+
+/* -------------------------------Outils informatiques--------------------------- */
+#outil {
+    background-color: #DDBEA5;
+    border-radius: 20px;
+    width: 25%;
+    padding: 15px 20px;
+    margin-top: 300px; /* Réduire la marge supérieure */
+    float: left;
+	margin-left: 230px;
+}
+
+#outil h3 {
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
+
+#langage {
+    text-align: center;
+    margin-top: 460px; /* Réduire la marge supérieure */
+	margin-left: 200px;
+	position: relative;
+	left: 25px;
+}
+
+#langage table {
+    width: 20%; /* Augmenter la largeur du tableau */
+    border-collapse: collapse;
+    background-color: #AC663E;
+    margin: 0 auto; /* Centrer le tableau horizontalement */
+}
+
+#langage table tr {
+    background-color: #DDBEA5;
+}
+
+#langage table tr td {
+    padding: 10px;
+    border: 1px solid #000;
+    color: white;
+}
+
+#langage table tr td a:hover {
+    background-color: #AC663E;
+    color: white;
+}
+
+#cv {
+    background-color: #AC663E;
+    border-radius: 20px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    width: 17%;
+    height: 10vh;
+    margin-top: 200px;
+    position: relative;
+    left: 600px;
+    border: 3px solid #000;
+}
+
+#cv:hover {
+    background-color: #DDBEA5; /* Couleur de fond au survol de la case entière */
+}
+
+#cv .content {
+    text-align: center; /* Pour centrer le contenu horizontalement */
+}
+
+#cv a {
+    color: white; /* Ajout d'une couleur pour le lien */
+}
+
+
+/* ----------------------------------------------Footer---------------------------------------- */
+
+
+.contenu{
+	flex: 1 0 auto;
+}
+
+footer {
+	flex-shrink: 0;
+	border-top: 1px dashed #000;
+	width: 100%;
+	background: #f1f1f1;
+	color: #333;
+	height: 100%;
+	margin-top: 750px;
+}
+.contenu-footer{
+	width: 33.33%; 
+}
+.contenu-footer{
+	width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	font-size: 20px;
+	padding: 20px 0 100px;
+	height: 100%;
+}
+
+.bloc{
+	width: 33.33%;
+	margin: 0 30px;
+}
+
+/* contact */
+.footer-contact h3,
+.footer-services h3,
+.footer-media h3 {
+	font-size: 25px;
+	padding-bottom: 20px;
+	color:#ad795b;
+}
+
+.footer-contact p{
+	padding: 5px 0;
+}
+
+/* Services */
+
+
+.liste-services,
+.liste-media {
+	list-style-type:none;
+	justify-content: center;
+}
+
+.liste-services li{
+	padding: 5px 0;
+	justify-content: center;
+}
+
+.liste-services a{
+	text-decoration: none;
+	color: #333;
+}
+
+.liste-services a:hover{
+	color: #73cdff;
+}
+
+/* Media */
+
+.liste-media{
+	position: relative;
+	right: 10px;
+}
+.liste-media img{
+	width: 40px;
+	margin: 10px 10px;
+
+}
+
+.liste-media a {
+	text-decoration: none;
+	color: #333;
+	display: flex;
+	align-items: center;
+	font-size: 25px;
+}
+
+@media screen and (max-width: 1300px){
+	.contenu-footer{
+		width:700px;
+		flex-wrap: wrap;
+	}
+	.bloc{
+		width: 40%;
+		margin: 0 0;
+	}
+	.bloc:nth-child(1),
+	.bloc:nth-child(2){
+		margin-bottom: 50px;
+	}
+}
+
+@media screen and (max-width: 800px){
+	.contenu-footer{
+		width:320px;
+	}
+	.bloc{
+		width: 300%;
+		margin: 30px 30px;
+	}
+	.bloc:nth-child(1),
+	.bloc:nth-child(2){
+		margin-bottom: 30px;
+	}
+	.bloc:nth-child(1){
+		margin-top: 0;
+	}
+}
+
+
+
+
+
+

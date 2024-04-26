@@ -1,0 +1,104 @@
+.logo img {
+    max-height: 100px;
+    width: 8%;
+    float: left;
+}
+
+.banner img {
+    max-height: 100px;
+	width:92%;
+    float: left;
+}
+
+
+
+body {
+    background: #e1e1e1;
+}
+/* ------------------------------------------------------- Barre de navigation ------------------------------------------------------------- */
+nav {
+    clear: both; /* Cette propriété assure que la nav est positionnée en dessous des éléments flottants */
+    margin-top: 15px;
+    background-color: #c1dbda;
+    overflow: hidden;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #c1dbda;
+    overflow: hidden;
+	margin-top:15px;
+}
+
+nav li {
+    float: left;
+	width: 33.33%; 
+}
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 24px 26px;
+    text-decoration: none;
+    border: 2px solid #000;
+}
+
+nav li a:hover {
+    background-color: #73cdff;
+}
+/* --------------------------------------Titre Série Temporelles------------------------------------- */
+.container {
+    display: flex;
+    justify-content: center; /* Centrer horizontalement */
+    align-items: center; /* Centrer verticalement */
+    flex-direction: column; /* Aligner les éléments en colonne */
+    text-align: center; /* Centrer le texte */
+    height: 20vh;
+    margin-top: 50px;
+}
+
+.container h2 {
+    font-size: 50px;
+    color: #ad795b;
+    margin: 0; /* Supprimer les marges par défaut */
+    border: none;
+}
+
+.container h3 {
+    font-size: 42px;
+    color: #ad795b;
+    margin: 0; /* Supprimer les marges par défaut */
+    border: none;
+}
+/* ---------------------------------Explication-------------------------- */
+#explication{
+	background-color: #DDBEA5;
+	border-radius: 20px; 
+	width: 70%;
+	padding: 15px 20px;
+	margin-top: 100px;
+	margin-left: 150px;
+}
+.rapport {
+	text-align: center; /* Justifier le texte */
+    font-size: 20px; /* Taille de la police */
+	color: white;
+	list-style-type:none;
+}
+.rapport a {
+	text-decoration: none;
+	color: white;
+}
+.rapport a:hover {
+	color: #73cdff;
+}
+
+/* ----------------------------------------------Footer---------------------------------------- */
+
+
+
+footer {
+	background:#e1e1e1;
+	
+}

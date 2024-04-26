@@ -1,0 +1,183 @@
+.logo img {
+    max-height: 100px;
+    width: 8%;
+    float: left;
+}
+
+.banner img {
+    max-height: 100px;
+	width:92%;
+    float: left;
+}
+
+
+
+body {
+    background: #e1e1e1;
+}
+
+/* ------------------------------------------------------- Barre de navigation ------------------------------------------------------------- */
+nav {
+    clear: both; /* Cette propriété assure que la nav est positionnée en dessous des éléments flottants */
+    margin-top: 15px;
+    background-color: #c1dbda;
+    overflow: hidden;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #c1dbda;
+    overflow: hidden;
+	margin-top:15px;
+}
+
+nav li {
+    float: left;
+	width: 33.33%; 
+}
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 24px 26px;
+    text-decoration: none;
+    border: 2px solid #000;
+}
+
+nav li a:hover {
+    background-color: #73cdff;
+}
+
+
+h1 {
+    font-size: 42px;
+    text-align: center;
+    margin-top: 50px; /* Ajoutez de l'espace en haut du titre */
+	color:#ad795b;
+	
+}
+
+/* ----------------------------------------------Footer---------------------------------------- */
+
+
+.contenu{
+	flex: 1 0 auto;
+}
+
+footer {
+	flex-shrink: 0;
+	border-top: 1px dashed #000;
+	width: 100%;
+	background: #f1f1f1;
+	color: #333;
+	height: 100%;
+	margin-top: 750px;
+}
+
+.contenu-footer{
+	width: 1200px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	font-size: 20px;
+	padding: 20px 0 100px;
+	height: 100%;
+}
+
+.bloc{
+	width: 33.33%;
+	margin: 0 30px;
+}
+
+/* contact */
+.footer-contact h3,
+.footer-services h3,
+.footer-media h3 {
+	font-size: 25px;
+	padding-bottom: 20px;
+}
+
+.footer-contact p{
+	padding: 5px 0;
+}
+
+/* Services */
+
+
+.liste-services,
+.liste-media {
+	list-style-type:none;
+}
+
+.liste-services li{
+	padding: 5px 0;
+}
+
+.liste-services a{
+	text-decoration: none;
+	color: #333;
+}
+
+.liste-services a:hover{
+	color: #73cdff;
+}
+
+/* Media */
+
+.liste-media{
+	position: relative;
+	right: 10px;
+}
+.liste-media img{
+	width: 40px;
+	margin: 10px 10px;
+
+}
+
+.liste-media a {
+	text-decoration: none;
+	color: #333;
+	display: flex;
+	align-items: center;
+	font-size: 25px;
+}
+
+@media screen and (max-width: 1300px){
+	.contenu-footer{
+		width:700px;
+		flex-wrap: wrap;
+	}
+	.bloc{
+		width: 40%;
+		margin: 0 0;
+	}
+	.bloc:nth-child(1),
+	.bloc:nth-child(2){
+		margin-bottom: 50px;
+	}
+}
+
+@media screen and (max-width: 800px){
+	.contenu-footer{
+		width:320px;
+	}
+	.bloc{
+		width: 300%;
+		margin: 30px 30px;
+	}
+	.bloc:nth-child(1),
+	.bloc:nth-child(2){
+		margin-bottom: 30px;
+	}
+	.bloc:nth-child(1){
+		margin-top: 0;
+	}
+}
+
+
+
+
+
+

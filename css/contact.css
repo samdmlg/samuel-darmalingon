@@ -1,0 +1,88 @@
+.logo img {
+    max-height: 100px;
+    width: 8%;
+    float: left;
+}
+
+.banner img {
+    max-height: 100px;
+	width:92%;
+    float: left;
+}
+
+
+
+body {
+    background: #e1e1e1;
+}
+
+/* ------------------------------------------------------- Barre de navigation ------------------------------------------------------------- */
+nav {
+    clear: both; /* Cette propriété assure que la nav est positionnée en dessous des éléments flottants */
+    margin-top: 15px;
+    background-color: #c1dbda;
+    overflow: hidden;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #c1dbda;
+    overflow: hidden;
+	margin-top:15px;
+}
+
+nav li {
+    float: left;
+	width: 33.33%; 
+}
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 24px 26px;
+    text-decoration: none;
+    border: 2px solid #000;
+}
+
+nav li a:hover {
+	background-color: #73cdff;
+}
+
+h1 {
+    font-size: 42px;
+    text-align: center;
+    margin-top: 50px; /* Ajoutez de l'espace en haut du titre */
+	color:#ad795b;
+	
+}
+.lien{
+	text-align: center;
+	list-style-type:none;
+}
+
+.lien a {
+	text-decoration: none;
+	color: #333;
+}
+.lien a:hover{
+	color: #73cdff;
+}
+/* ----------------------------------------------Formulaire------------------------------ */
+h3{
+	font-size: 25px;
+    text-align: center;
+    margin-top: 50px; /* Ajoutez de l'espace en haut du titre */
+	color:#ad795b
+}
+form{
+	border: 1px solid black;
+	background-color: #DDBEA5;
+	border-radius: 20px; 
+	width: 40%;
+	margin: 0 auto;
+	text-align:center;
+	color: white;
+}
+
+

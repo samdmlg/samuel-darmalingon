@@ -1,0 +1,77 @@
+<!doctype>
+<html>
+	<head>
+		<title>E-Portfolio</title>
+		<meta charset="UTF-8">
+		<link rel= "stylesheet" type ="text/css" href="css/contact.css">
+	</head>
+	<body>
+		<header>
+			<a href="index.html">
+					<div class="logo">
+						<img src="image/logo.jpg" alt="Logo">
+			</a>
+			</div>
+			<div class="banner">
+				<img src="image/banniere.jpg" alt="Bannière Accueil">
+			</div>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="index.html">Accueil</a></li>
+				<li><a href="projet.html">Mes Projets et Compétences</a></li>
+				<!-- <li><a href="experience.html">Expériences Professionnelles</a></li> -->
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</nav>
+		<h1> Me Contacter </h1>
+		<ul class = "lien">
+			<h3>Mon Mail</h3>
+				<li><a href="mailto:samuel.darmalingon@gmail.com">samuel.darmalingon@gmail.com</a></li>
+			<h3>Mon LinkedIn</h3>
+				<li><a href="https://www.linkedin.com/in/samuel-darmalingon-945506270/">Samuel DARMALINGON</a></li>
+		</ul>
+		<div class="contact">
+			<h3>Contactez-moi</h3>
+			<form action="#/ma_page_de_traitement" method="post"> 
+				<fieldset>
+					<legend>Veuillez remplir le formulaire</legend>
+					
+					<div id="formulaire">
+						<label for= "Nom">Votre Nom</label>
+						<input type="text" name="Nom" placeholder="Entrez votre nom" required>
+					</div>
+					
+					<div id="formulaire">
+						<label for= "Prenom">Votre Prénom</label>
+						<input type="text" name="Prenom" placeholder="Entrez votre prénom" required>
+					</div>
+					
+					<div id="formulaire">
+						<br><label for ="email">Votre E-mail</label>
+						<input type="email" name="email" placeholder="monadresse@mail.com" required>
+					</div>
+					
+					<div id="formulaire">
+					<label>Quel est votre genre ?</label><br>
+					<select name="sexe"id="sexe"required>
+						<option value="Homme">Homme</option>
+						<option value="Femme">Femme</option>
+						<option value="Autre">Autre</option>
+					</select><br>
+					
+					<div id="formulaire">
+						<br><label>Votre Message</label><br>
+						<textarea id="message" name="message" placeholder="Bonjour je vous contacte car..." required></textarea><br>
+					</div>
+					<button type="submit"> Envoyer mon message </button>
+				</fieldset>
+			</form>
+		</div>
+		
+		
+
+		
+		
+	</body>
+</html>
